@@ -13,6 +13,9 @@ A packer project that creates a ```vagrant box``` with ```mysql``` installed
 - File ```http/preseed.cfg``` - a file for Ubuntu to self-install
 - File ```script/provision.sh``` :  a script that installs ```mysql application```
 - File ```template.json``` : a JSON file that configure the various components of Packer in order to create required machine images
+- File ```Gemfile``` : It contains the ruby version and all required by the kitchen bundlers
+- File ```.kitchen.yml``` : The kitchen testing configuration file
+- File ```test/integration/default/check_pkg.rb``` : a ruby program used by the kitchen to test whether the ```nginx``` is installed
 
 ### How to use the repo
 
